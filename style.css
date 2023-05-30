@@ -1,0 +1,169 @@
+body{
+    background-color: rgba(0,0,0,0.1);
+}
+
+header{
+    padding: .5em;
+    background-color: #6ab2b2;
+}
+
+#logo{
+    padding: 6.5px 34px;
+}
+
+main{
+    padding: 1.5%;
+    height: auto;
+}
+
+.left{
+    display: inline-block;
+    width: 70%
+}
+
+#Texto-ingresado{
+    padding: 1.5%;
+    width: 90%;
+    height: 350px;
+    margin-bottom: 1em;
+    background: transparent;
+    border: none;
+    border-radius: 15px;
+    font-family: 'Secular One', sans-serif;
+    font-size: 20px;
+    resize: none;
+    box-shadow: 
+        inset -15px -15px 30px rgba(0,0,0,0.1),
+        0.3em 0.3em 1em rgba(0,0,0,0.3);
+}
+
+.Boton{
+    width: 250px;
+    height: 55px;
+    font-family: 'Secular One', sans-serif;
+    font-size: 20px;
+    color:  #0A3871;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    background-color:  #6ab2b2;
+    margin: 10px 2em;
+}
+
+.Boton:hover{
+    border: #7a8189;
+    border-style: solid;
+    transform: scale(1.09);
+}
+
+.right{
+    position: absolute;   
+    display: inline-block;
+    width: 29.6%;
+    text-align: center;
+}
+
+#before{
+    display: inline-block;
+    background: url(Imagenes/Frame\ 5.png);
+    background-position: 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#after{
+    display: none;
+    background: none;
+}
+
+.Texto-resultado{
+    width: 230px;
+    height: 470px;
+    padding: 0;
+    border: none;
+    border-radius: 15px;
+    font-family: 'Secular One', sans-serif;
+    font-size: 20px;
+    box-shadow: 
+        inset -15px -15px 30px rgba(0,0,0,0.1),
+        0.3em 0.3em 1em rgba(0,0,0,0.3);
+    resize: none;
+}
+
+#wall{
+    width: 100%;
+}
+
+footer{
+    background: #6ab2b2;
+    font-family: 'Secular One', sans-serif;
+    font-weight: bold;
+    color: #0A3871;
+    padding: 1em;
+    text-align: center;
+}
+
+@media screen and (max-width: 1023.5px) {
+    header{
+        text-align: center;
+    }
+
+    main{
+        padding: 3%;
+    }
+    .left{
+        display: block;
+        width: auto;
+    }
+    
+    #Texto-ingresado{
+        width: 97%;
+        height: 285px;
+        margin-bottom: 1em;
+        background: transparent;
+        border: none;
+        border-radius: 15px;
+        font-size: 20px;
+        resize: none;
+        box-shadow: 
+            inset -15px -15px 30px rgba(0,0,0,0.1),
+            0.3em 0.3em 1em rgba(0,0,0,0.3);
+    }
+
+    .Alert{
+        padding: 0 1.5em;
+        text-align: justify;
+    }
+
+    .left-botones{
+        text-align: center;
+        margin: .5em 0;
+    }
+
+    .Boton{
+        margin: .5em 0;
+        color: #0A3871;
+    }
+
+    .right{
+        display: block;
+        position: relative;
+        width: auto;
+    }
+
+    .Texto-resultado{
+        width: 97%;
+        height: 285px;
+        background: url(Imagenes/Frame\ 5.png);
+        background-position: center;
+        background-size: auto;
+        background-repeat: no-repeat;
+        padding: 0;
+        border: none;
+        border-radius: 15px;
+        box-shadow: 
+            inset -15px -15px 30px rgba(0,0,0,0.1),
+            0.3em 0.3em 1em rgba(0,0,0,0.3);
+        resize: none;
+    }
+}

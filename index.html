@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Nuestro primer proyecto</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+
+    </head>
+
+    <body>
+        <header>
+            <h1 class="logo"><img id="logo" src="Imagenes/logo.png" alt="Logo"></h1>
+        </header>
+
+        <main>
+            <div class="left">
+                <form>
+                    <textarea id="Texto-ingresado" placeholder="Ingrese aquí el texto"></textarea>
+                    <p class="Alert">🛈 Sólo ingresar letras minúsculas no acentuadas.</p>
+                    <div class="left-botones">
+                        <input id="Encriptar" class="Boton" type="button" value="Encriptar">
+                        <input id="Desencriptar" class="Boton" type="button" value="Desencriptar">
+                    </div>
+                </form>
+            </div>
+            <div class="right">
+                <textarea id="before" class="Texto-resultado" disabled></textarea>                
+            </div>
+            <div class="right">
+                <textarea id="after" class="Texto-resultado" disabled></textarea> 
+            </div>
+        </main>
+        <!-- <textarea id="Texto-resultado"></textarea> -->
+        <footer>
+            <p class="copyright">&copy Eduardo Alexis Aguirre Ramos - 2023</p>
+        </footer>
+    </body>
+
+</html>
+
+<script>
+
+    function mostrarTextoResultado(){
+        // Falta desarrollar la función
+        document.getElementById("before").style.display = "none";
+        document.getElementById("after").style.display = "inline-block"
+    }
+
+    function desencriptar(){
+        // Falta desarrollar la función
+        document.getElementById("before").style.display = "none";
+        document.getElementById("after").style.display = "inline-block"
+    }
+      
+    var encrypt = document.querySelector("#Encriptar");
+    encrypt.onclick = mostrarTextoResultado;
+    var decrypt = document.querySelector("#Desencriptar");
+    decrypt.onclick = recargar;
+
+</script>
