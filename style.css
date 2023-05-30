@@ -77,9 +77,9 @@ main{
 }
 
 .Texto-resultado{
-    width: 230px;
-    height: 470px;
-    padding: 1.5%;
+    width: 220px;
+    height: 460px;
+    padding: 4%;
     border: none;
     border-radius: 15px;
     font-family: 'Secular One', sans-serif;
@@ -161,6 +161,7 @@ footer{
     .Texto-resultado{
         width: 97%;
         height: 285px;
+        padding: 1.5%;
         border: none;
         border-radius: 15px;
         box-shadow: 
