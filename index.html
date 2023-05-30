@@ -46,7 +46,7 @@
 
 <script>
 
-    function mostrarTextoResultado(){
+    function encriptar(){
         // Falta desarrollar la función
         document.getElementById("before").style.display = "none";
         document.getElementById("after").style.display = "inline-block"
@@ -59,8 +59,8 @@
     }
       
     var encrypt = document.querySelector("#Encriptar");
-    encrypt.onclick = mostrarTextoResultado;
+    encrypt.onclick = encriptar;
     var decrypt = document.querySelector("#Desencriptar");
-    decrypt.onclick = recargar;
+    decrypt.onclick = desencriptar;
 
 </script>
