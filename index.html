@@ -33,7 +33,8 @@
                 <textarea id="before" class="Texto-resultado" disabled></textarea>                
             </div>
             <div class="right">
-                <textarea id="after" class="Texto-resultado" disabled></textarea> 
+                <textarea id="after" class="Texto-resultado" disabled></textarea>
+                <input id="Copiar" class="Boton" type="button" value="Copiar"> 
             </div>
         </main>
         <footer>
@@ -43,49 +44,4 @@
 
 </html>
 
-<script>
-
-    var texto = document.querySelector("#Texto-ingresado");
-    var resultado = document.querySelector("#after");
-    var encrypt = ["a","e","i","o","u"];
-    var decrypt = ["ai","enter","imes","ober","ufat"]
-
-    function encriptar(){
-        // Desarrollo de la función
-        for(var posicion = 0;posicion<=encrypt.length;posicion++) {
-
-            if (texto.value == encrypt[posicion]) {
-                resultado.value = decrypt[posicion];
-            }
-            
-        }
-
-        texto.value = "";
-        // Cambio de cuadro de texto
-        window.scrollTo(0, document.body.scrollHeight);
-        document.getElementById("before").style.display = "none";
-        document.getElementById("after").style.display = "inline-block"
-    }
-
-    function desencriptar(){
-        // Desarrollo de la función
-        for(var posicion = 0;posicion<=decrypt.length;posicion++) {
-
-            if (texto.value == decrypt[posicion]) {
-                resultado.value = encrypt[posicion];
-            }
-        }
-
-        texto.value = "";
-        // Cambio de cuadro de texto
-        window.scrollTo(0, document.body.scrollHeight);
-        document.getElementById("before").style.display = "none";
-        document.getElementById("after").style.display = "inline-block"
-    }
-      
-    var encryptBoton = document.querySelector("#Encriptar");
-    encryptBoton.onclick = encriptar;
-    var decryptBoton = document.querySelector("#Desencriptar");
-    decryptBoton.onclick = desencriptar;
-
-</script>
+<script src="js.html"></script>

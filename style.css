@@ -72,13 +72,13 @@ main{
 }
 
 #after{
-    display: none;
+    display: hidden;
     background: none;
 }
 
 .Texto-resultado{
     width: 220px;
-    height: 460px;
+    height: 400px;
     padding: 4%;
     border: none;
     border-radius: 15px;
@@ -90,8 +90,9 @@ main{
     resize: none;
 }
 
-#wall{
-    width: 100%;
+#Copiar{
+    width: 170px;
+    height: 55px;
 }
 
 footer{
@@ -169,4 +170,5 @@ footer{
             0.3em 0.3em 1em rgba(0,0,0,0.3);
         resize: none;
     }
+
 }
