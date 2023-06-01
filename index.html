@@ -2,104 +2,42 @@
 
 <html lang="es">
 
-    <head>
-
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width">
-        <title>Nuestro primer proyecto</title>
-        <link rel="stylesheet" href="reset.css">
-        <link rel="stylesheet" href="style.css">
-        <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
-
-    </head>
-
-    <body>
-        <header>
-            <h1 class="logo"><img id="logo" src="Imagenes/logo.png" alt="Logo"></h1>
-        </header>
-
-        <main>
-            <div class="left">
-                <form>
-                    <textarea id="Texto-ingresado" placeholder="Ingrese aquí el texto"></textarea>
-                    <p class="Alert">🛈 Sólo ingresar letras minúsculas no acentuadas.</p>
-                    <div class="left-botones">
-                        <input id="Encriptar" class="Boton" type="button" value="Encriptar">
-                        <input id="Desencriptar" class="Boton" type="button" value="Desencriptar">
-                    </div>
-                </form>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+    <title>Desafío encriptador</title>
+</head>
+<body>
+    <header>
+        <img id="logo" src="Imagenes/logo.png" alt="Logo">
+    </header>
+    <main>
+        <section class="left">
+            <textarea class="Texto-ingresado" placeholder="Ingrese aquí el texto"></textarea>
+            <div>
+                <p class="Alert">🛈 Sólo ingresar letras minúsculas no acentuadas.</p>
             </div>
-            <div class="right">
-                <textarea id="before" class="Texto-resultado" disabled></textarea>                
+            <div class="left-botones">
+                <input id="Encriptar" class="Boton" type="button" value="Encriptar">
+                <input id="Desencriptar" class="Boton" type="button" value="Desencriptar">
             </div>
-            <div class="right">
-                <textarea id="after" class="Texto-resultado" disabled></textarea>
+        </section>
+        <section class="right">
+            <div>
+                <textarea id="Mensaje" class="resultado" disabled></textarea>                
+            </div>
+            <div>
                 <input id="Copiar" class="Boton" type="button" value="Copiar"> 
             </div>
-        </main>
-        <footer>
-            <p class="copyright">&copy Eduardo Alexis Aguirre Ramos - 2023</p>
-        </footer>
-    </body>
-
+        </section>
+    </main>
+    <footer>
+        <p class="copyright">&copy Eduardo Alexis Aguirre Ramos - 2023</p>
+    </footer>
+<script src="script.js"></script>
+</body>
 </html>
-
-<script>
-
-    var texto = document.querySelector("#Texto-ingresado");
-    var resultado = document.querySelector("#after");
-    var encrypt = ["a","e","i","o","u"];
-    var decrypt = ["ai","enter","imes","ober","ufat"];
-
-    function encriptar(){
-    
-        for(var posicion = 0;posicion<=encrypt.length;posicion++) {
-
-            if (texto.value == encrypt[posicion]) {
-                resultado.value = decrypt[posicion];
-            }
-
-        }
-
-        texto.value = "";
-        window.scrollTo(0, document.body.scrollHeight);
-        document.getElementById("before").style.display = "none";
-        document.getElementById("after").style.display = "inline-block";
-    }
-
-    function desencriptar(){
-
-        for(var posicion = 0;posicion<=decrypt.length;posicion++) {
-
-            if (texto.value == decrypt[posicion]) {
-                resultado.value = encrypt[posicion];
-            }
-
-        }
-
-        texto.value = "";
-        window.scrollTo(0, document.body.scrollHeight);
-        document.getElementById("before").style.display = "none";
-        document.getElementById("after").style.display = "inline-block";
-        
-    }
-
-    /* Funcion para copiar
-    function copy() {
-
-        var content = document.getElementById("after");
-
-        content.select();
-        document.execCommand(copy);
-
-    }
-    */
-      
-    var encryptBoton = document.querySelector("#Encriptar");
-    encryptBoton.onclick = encriptar;
-    var decryptBoton = document.querySelector("#Desencriptar");
-    decryptBoton.onclick = desencriptar;
-    /*var copyBoton = document.querySelector("#Copiar");
-    copyBoton.onclick = copy;*/
-
-</script>

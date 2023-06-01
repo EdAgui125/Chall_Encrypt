@@ -16,27 +16,55 @@ main{
     height: auto;
 }
 
-.left{
-    display: inline-block;
-    width: 70%
-}
+/* Parte izquiera/superior */
+    .left{
+        display: inline-block;
+        width: 70%
+    }
 
-#Texto-ingresado{
-    padding: 1.5%;
-    width: 90%;
-    height: 350px;
-    margin-bottom: 1em;
-    background: transparent;
-    border: none;
-    border-radius: 15px;
-    font-family: 'Secular One', sans-serif;
-    font-size: 20px;
-    resize: none;
-    box-shadow: 
-        inset -15px -15px 30px rgba(0,0,0,0.1),
-        0.3em 0.3em 1em rgba(0,0,0,0.3);
-}
+    .Texto-ingresado{
+        padding: 1.5%;
+        width: 90%;
+        height: 350px;
+        margin-bottom: 1em;
+        background: transparent;
+        border: none;
+        border-radius: 15px;
+        font-family: 'Secular One', sans-serif;
+        font-size: 20px;
+        resize: none;
+        box-shadow: 
+            inset -15px -15px 30px rgba(0,0,0,0.1),
+            0.3em 0.3em 1em rgba(0,0,0,0.3);
+        text-transform: lowercase;
+    }
 
+/* Parte derecha/inferior */
+    .right{
+        display: inline-block;
+        width: 29.6%;
+        text-align: center;
+    }
+
+    .resultado{
+        width: 220px;
+        height: 400px;
+        padding: 4%;
+        background-image: url(Imagenes/Muñeco.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        border: none;
+        border-radius: 15px;
+        font-family: 'Secular One', sans-serif;
+        font-size: 20px;
+        box-shadow: 
+            inset -15px -15px 30px rgba(0,0,0,0.1),
+            0.3em 0.3em 1em rgba(0,0,0,0.3);
+        resize: none;
+    }
+
+/* Diseño de botones */
 .Boton{
     width: 250px;
     height: 55px;
@@ -56,45 +84,12 @@ main{
     transform: scale(1.09);
 }
 
-.right{
-    position: absolute;   
-    display: inline-block;
-    width: 29.6%;
-    text-align: center;
-}
-
-#before{
-    display: inline-block;
-    background: url(Imagenes/Frame\ 5.png);
-    background-position: 0;
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-
-#after{
-    display: hidden;
-    background: none;
-}
-
-.Texto-resultado{
-    width: 220px;
-    height: 400px;
-    padding: 4%;
-    border: none;
-    border-radius: 15px;
-    font-family: 'Secular One', sans-serif;
-    font-size: 20px;
-    box-shadow: 
-        inset -15px -15px 30px rgba(0,0,0,0.1),
-        0.3em 0.3em 1em rgba(0,0,0,0.3);
-    resize: none;
-}
-
 #Copiar{
     width: 170px;
-    height: 55px;
+    height: 35px;
 }
 
+/* Pie de página */
 footer{
     background: #6ab2b2;
     font-family: 'Secular One', sans-serif;
@@ -104,6 +99,7 @@ footer{
     text-align: center;
 }
 
+/* Diseños pantallas menores a 1024px */
 @media screen and (max-width: 1023.5px) {
     header{
         text-align: center;
@@ -117,7 +113,7 @@ footer{
         width: auto;
     }
     
-    #Texto-ingresado{
+    .Texto-ingresado{
         width: 97%;
         height: 285px;
         margin-bottom: 1em;
@@ -143,7 +139,6 @@ footer{
 
     .Boton{
         margin: .5em 0;
-        color: #0A3871;
     }
 
     .right{
@@ -152,14 +147,7 @@ footer{
         width: auto;
     }
 
-    #before{        
-        background: url(Imagenes/Frame\ 5.png);
-        background-position: center;
-        background-size: auto;
-        background-repeat: no-repeat;
-    }
-
-    .Texto-resultado{
+    .resultado{
         width: 97%;
         height: 285px;
         padding: 1.5%;
