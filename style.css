@@ -50,7 +50,7 @@ main{
         width: 220px;
         height: 400px;
         padding: 4%;
-        background-image: url(Imagenes/Frame 5.png);
+        background-image: url(Imagenes/Frame\ 5.png);
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center;
